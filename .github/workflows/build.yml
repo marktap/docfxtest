@@ -28,4 +28,4 @@ jobs:
       run: docfx init --quiet
 
     - name: Run docfx
-      run: docfx "docfxtest/docs/docfx_project/docfx.json"
+      run: docfx "docs/docfx_project/docfx.json"
