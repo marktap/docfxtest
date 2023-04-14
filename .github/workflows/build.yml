@@ -25,3 +25,6 @@ jobs:
 
     - name: Initialize docfx
       run: docfx init --quiet
+
+    - name: Run docfx
+      run: docfx "/home/runner/work/docfxtest/docfxtest/docfx_project/docfx.json" --serve
