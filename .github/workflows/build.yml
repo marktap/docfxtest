@@ -14,6 +14,7 @@ jobs:
     - run: echo "GITHUB_JOB $GITHUB_JOB"
     - run: echo "GITHUB_REPOSITORY $GITHUB_REPOSITORY"
     - run: echo "GITHUB_WORKFLOW $GITHUB_WORKFLOW"
+    - run: pwd
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -27,4 +28,4 @@ jobs:
       run: docfx init --quiet
 
     - name: Run docfx
-      run: docfx "/home/runner/work/docfxtest/docs/docfx_project/docfx.json"
+      run: docfx "docfxtest/docs/docfx_project/docfx.json"
