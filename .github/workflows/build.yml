@@ -9,8 +9,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      with:
-        token: ${{ github.token }}
 
     - run: echo "GITHUB_ACTOR $GITHUB_ACTOR"
     - run: echo "GITHUB_JOB $GITHUB_JOB"
@@ -24,3 +22,6 @@ jobs:
 
     - name: Install docfx
       run: dotnet tool update -g docfx
+
+    - name: Initialize docfx
+      run: docfx init --quiet
