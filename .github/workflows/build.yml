@@ -27,4 +27,4 @@ jobs:
       run: docfx init --quiet
 
     - name: Run docfx
-      run: docfx "/home/runner/work/docfxtest/docfxtest/docfx_project/docfx.json" --serve
+      run: docfx "/home/runner/work/docfxtest/docs/docfx_project/docfx.json"
